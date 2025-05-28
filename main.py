@@ -493,7 +493,7 @@ def destroy_message(message):
 @bot.message_handler(func=lambda message: message.text == "Помощь с использованием❓")
 def send_reaction(message):
     keyboard1 = InlineKeyboardMarkup()
-    button1 = InlineKeyboardButton("Страница проекта на GitHub", url="https://www.example.com")
+    button1 = InlineKeyboardButton("Страница проекта на GitHub", url="https://github.com/TheTutel/June-2025/tree/main")
     keyboard1.add(button1)
     bot.send_message(message.chat.id, 'С ботом можно взаимодействовать с помощью интерактивного меню внизу экрана\nКнопка "Техника" - отправить случайное изображение и информацию о технике на нем\nКнопка "Написать жалобу на бота" - ваше сообщение вскоре будет внимательно рассмотрено нашими администраторами', reply_markup=keyboard1)
 
